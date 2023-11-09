@@ -13,11 +13,17 @@ h5,
 h6 {
   margin: 0 1em 0 1em;
 }
+p {
+  line-height: 1.7em;
+}
 
 header {
   display: flex;
   background-color: orange;
   width: 100%;
+}
+main {
+  padding-bottom: 3em;
 }
 
 header img {
@@ -136,15 +142,6 @@ footer h3 {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  } */
   nav ul {
     display: flex;
     margin-right: 10%;
@@ -171,7 +168,7 @@ footer h3 {
   }
 
   .image-section {
-    flex: 0 0 33.333333%;
+    flex: 33.333333%;
   }
   main {
     width: 1200px;
@@ -219,10 +216,8 @@ footer h3 {
   .shop-left img {
     width: 60%;
   }
-  /* .shop-left:nth-child(odd) p {
-    margin-left: 3%;
+
+  p {
+    line-height: 1.9em;
   }
-  .shop-left:nth-child(odd) h4 {
-    margin-left: 3%;
-  } */
 }
