@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 3% 0 3%;
+  margin: 0 1em 0 1em;
 }
 
 header {
@@ -136,6 +136,15 @@ footer h3 {
 }
 
 @media only screen and (min-width: 1024px) {
+  /* p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  } */
   nav ul {
     display: flex;
     margin-right: 10%;
@@ -176,6 +185,7 @@ footer h3 {
   }
   .group {
     width: 27%;
+    padding-bottom: 5%;
   }
 
   .footer-div {
@@ -185,10 +195,34 @@ footer h3 {
     width: 30%;
   }
   footer h3,
-  p,
-  a,
-  h6 {
+  footer p,
+  footer a,
+  footer h6 {
     margin: 0;
     padding-left: 0 !important;
   }
+  .historie-opdeller {
+    display: flex;
+  }
+  .historie-opdeller p {
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  .runner {
+    width: 60%;
+  }
+
+  .shop-left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .shop-left img {
+    width: 60%;
+  }
+  /* .shop-left:nth-child(odd) p {
+    margin-left: 3%;
+  }
+  .shop-left:nth-child(odd) h4 {
+    margin-left: 3%;
+  } */
 }
