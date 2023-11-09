@@ -103,6 +103,15 @@ nav ul {
 .image-section {
   text-align: center;
   padding-bottom: 10%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.image-section:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 article {
@@ -136,16 +145,39 @@ footer h3 {
   display: flex;
   justify-content: space-between;
 }
+.footer-div img {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-div img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 .runner {
   width: 100%;
+}
+footer p:hover {
+  color: rgb(140, 25, 205);
+}
+footer h6:hover {
+  color: rgb(140, 25, 205);
+}
+footer h3:hover {
+  color: rgb(140, 25, 205);
+}
+footer a:hover {
+  color: rgb(140, 25, 205);
 }
 
 @media only screen and (min-width: 1024px) {
   nav ul {
     display: flex;
     margin-right: 10%;
-    width: 60%;
+    width: 70%;
     justify-content: space-around;
     text-align: center;
     align-items: center;
@@ -153,6 +185,9 @@ footer h3 {
   nav ul li a {
     color: white;
     text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: rgb(140, 25, 205);
   }
   nav img {
     display: none;
@@ -171,7 +206,7 @@ footer h3 {
     flex: 33.333333%;
   }
   main {
-    width: 1200px;
+    width: 60%;
     margin: auto;
   }
   .desk-footer {
@@ -206,7 +241,7 @@ footer h3 {
     margin-top: 2%;
   }
   .runner {
-    width: 60%;
+    width: 40vw;
   }
 
   .shop-left {
@@ -214,7 +249,7 @@ footer h3 {
     flex-direction: row-reverse;
   }
   .shop-left img {
-    width: 60%;
+    width: 35vw;
   }
 
   p {
